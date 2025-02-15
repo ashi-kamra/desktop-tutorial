@@ -3,4 +3,50 @@ body {
        and use the OS’s UI font as the website font
      */
     font: 100%/1.5 system-ui;
-   }
+    max-width: 100vh;
+    margin-inline: auto;
+    padding: 2em;
+    accent-color: var(--color-accent)''
+
+}
+
+html {
+  --color-accent: #E75480;
+}
+
+nav {
+  display: flex;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #E75480;
+}
+
+nav a {
+  flex: 1;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  padding: 0.5em;
+}
+
+nav a:hover {
+  background-color: oklch(from var(--color-accent) 95% 5% h)
+}
+
+.current {
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #E75480;
+  padding-bottom: -2em;
+}
+
+form {
+  display: grid;
+  gap: 1em;
+}
+
+label {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+}
