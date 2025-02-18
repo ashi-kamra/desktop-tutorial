@@ -18,14 +18,14 @@
 
 </head>
 <body>
-    <header>
-        <h1 style="text-align: center">🗺️ Assignment 2 🗺️</h1>
+    <header style="text-align: center">
+        <h1>🗺️ Assignment 2 🗺️</h1>
         <h2>Exploratory Data Analysis of MBTA GTFS Data</h2>
     </header>
     <section>
         <p>In this assignment, I conduct a general analysis of MBTA transit as it relates to transit-oriented development in Massachussets, with a specific focus on accessibility.</p>
         <p>I specifically utilize two files within the MBTA General Transit Feed Specification (GTFS). The GTFS is the most commonly used format for specifying public transit schedules, and contains multiple files within one transit systems specifications. I used a dataset from February 9, 2025 and looked specific at two files. <strong>stops.txt</strong> contained information about the location, name, and accessibility of physical MBTA transit stations/stop and other buildings, and <strong>fare_products.txt</strong> contains information about the pricing of MBTA transit routes grouped into large categories.</p>
-        <h2>Exploration Questions</h2>
+        <h2>Exploration Questions 📝</h2>
         <ol>
             <li>
                 How accessible are transit stations for people with disabilities?
@@ -56,7 +56,7 @@
         </ol>   
     </section>
     <section>
-        <h2>Discoveries and Insights</h2>
+        <h2>Discoveries and Insights 🔍</h2>
         <p>As the first step of this data analysis, we take a general look at recent MBTA GTFS data. By using Stop Latitude and Longitude as dimensions, we can map the individual MBTAs stops onto the geography of Massachusetts. Looking at the map, we can see that the pattern of MBTA stops reveals the transit routes, how far out they run too, and how they are especially complex and concentrated towards the urban areas of Boston.</p>
         <img src="../images/geomapping_mbta_routes.png">
         <p class="caption"> Fig. 1 Geomapping of Individual MBTA Stops by Longitude and Latitude </p>
@@ -95,7 +95,7 @@
         <p class="caption">Fig 10. Accepted Payment Methods by Transit Location</p>
     </section>
     <section>
-        <h2>Summary</h2>
+        <h2>Summary 📢</h2>
         <p>We analyzed the physical accessibility of transit stations in the MBTA system (through wheelchair boarding areas), in addition to the monetary accessibility (through payment method and fare price). Through this analysis, we have learned that the physical accessibility of MBTA stations ranges widely depending on location, with all stations in the data set having at least one wheelchair accessible area. More populous towns tend to have more wheelchair accessible areas due to a larger number of stops and more accessible areas within those stops. We also see that fare prices vary from ~$2 to $20 and this variation is impacted by distance one travels. Most payment methods accept the transit locations in the dataset, though there are some exceptions.</p>
     </section>
 
