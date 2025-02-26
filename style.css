@@ -25,6 +25,7 @@ p, li{
 
 html {
   --color-accent: green;
+  color-scheme: light dark;
 }
 
 nav {
@@ -43,7 +44,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: oklch(from var(--color-accent) 95% 5% h);
+  background-color: color-mix(in oklch, var(--color-accent), canvas 75%);
   border-bottom: 5px solid grey;
 }
 
@@ -66,6 +67,14 @@ label {
   grid-template-columns: subgrid;
   grid-column: 1 / -1;
   
+}
+
+label.color-scheme {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  display: inline-flex;
+  gap: 4px;
 }
 
 button {
