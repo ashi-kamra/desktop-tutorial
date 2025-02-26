@@ -24,15 +24,16 @@ p, li{
 }
 
 html {
-  --color-accent: green;
+  --color-accent: grey;
   color-scheme: light dark;
 }
 
 nav {
   display: flex;
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #E75480;
+  --border-color: oklch(65.29% 0.1845 5.39 / 40%);
+  border-bottom-color: var(--border-color);
 }
 
 nav a {
