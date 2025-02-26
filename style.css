@@ -19,6 +19,10 @@ h1 {
   font-size: 375%;
 }
 
+p, li{
+  font-size: 18px;
+}
+
 html {
   --color-accent: green;
 }
