@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style.css" rel="stylesheet">
+    <title>6.C35 Assignment 4</title>
+    <script type="module" src="global.js"></script>
+
+    <style>
+       img {
+        border: solid 1px
+       }
+       .caption {
+        text-align: center;
+        font-style: italic;
+       }
+    </style>
+
+</head>
+
+<body>
+    <header style="text-align: center">
+        <h1>🥷 Assignment 4 🥷</h1>
+        <h2>Persuasive and Deceptive Visualization</h2>
+        <p> <strong>Ashima Kamra </strong>- <em>ashimak@mit.edu</em></p>
+    </header>
+    <section>
+        <p>In this assignment, I utilize the principles of visualization design to manipulate a singular dataset and create a 1 perceptive and 1 deceptive visualization</p>
+        <h2>Proposition: [Police abuse was most prevalent among Black Americans compared to other racial and ethnic groups in New York City from 2000-2020] </h2>
+        <h2>For the Proposition:</h2>
+        <img src="/images/pro-viz.png" width="100%" alt="Persuasive Box and Whisker Plot">
+        <h3>Design Decisions:</h3>
+        <ol>
+            <li><strong>Using discrete values</strong></li>
+                <ul>
+                    <li>By treating each year as its own data point, we prevent the reader from seeing “fake” data, or data where there is not.</li>
+                    <li>This prevents the readers from being misled or making false assumptions about complainant data “in between” years if we use continuous data.</li>
+                    <li><strong>Score: +1</strong></li>
+                </ul>
+            <li><strong>Using percentage of total as opposed to total count of complaints</strong></li>
+                <ul>
+                    <li>Using percentages instead of the count of total complaints allows the reader to more easily understand the rates of potential police abuse as it occurs by ethnic group.</li>
+                    <li>This helps prevent any misunderstanding about absolute data, especially as the dataset is so large and absolute changes on big numbers often look bigger than they actually are.</li>
+                    <li>Though, using count data is not misleading itself when handled properly, so this technique adds only a bit of earnesty.</li>
+                    <li><strong>Score: +0.5</strong></li>
+                </ul>
+            <li><strong>Using a box and whisker plot</strong></li>
+                <ul>
+                    <li>Makes explicit some additional information about median, range, etc. of the data points for each ethnicity.</li>
+                    <li>his allows viewers to get a better picture of the data spread and potential overlaps between the data points of the different ethnic categories that would not be visible if I’d just plotted a singular statistic like average.</li>
+                    <li>Also, by including the data points themselves in addition to the whisker plot, we see how they do or do not align with the plot itself. Essentially, using a whisker plot lays everything about the data on the table.</li>
+                    <li><strong>Score: +1.5</strong></li>
+                </ul>
+            <li><strong>Excluding null and "unknown" data and displaying "refused" and "other race" categories</strong></li>
+                <ul>
+                    <li>Excluding null and unknown values technically “hides” data from the viewer, because they would not know these values exist otherwise.</li>
+                    <li>Thus, is why I included a caption below for added transparency. Complaints where the race of the civilian were “other” or “refused” were also included because this is not the same as null data.</li>
+                    <li>Showing data from the “other” group signals to the reader that there are other overlooked minority groups who may also face abuse by police. </li>
+                    <li>The “refused” category, and the fact that some people choose to withhold information about their race, may lead readers to question why some people do not feel comfortable publicly reporting that kind of sensitive information.</li>
+                    <li><strong>Score: +1.5</strong></li>
+                </ul>
+        </ol>
+        <h2>Against the Proposition</h2>
+        <img src="/images/against-viz.png" width="100%" alt="Deceptive Stacked Area Chart">
+        <h3>Design Decisions:</h3>
+        <ol>
+            <li><strong>Using a stacked area chart</strong></li>
+                <ul>
+                    <li>The highlighted area under the upper bound of the data can give the illusion that the area is much larger than it actually is. </li>
+                    <li>Especially because with normal line charts or scatter plots you can correspond a data point directly to the y-axis, you cannot do that if the order in which stacks data appears on the chart is sorted differently.</li>
+                    <li>A stacked area itself isn’t a particularly deceptive technique. But, when combined with the below design decision readers may be persuaded to read it like a line chart, in which case their analysis would be flawed.</li>
+                    <li><strong>Score: 0</strong></li>
+                </ul>
+            <li><strong>Sorting complainant ethnicity</strong></li>
+                <ul>
+                    <li>In order to make use of the potential for the stacked area chart to be misleading, I sorted the ethnicity so that the complaints made by the white, asian, etc, ethnic groups to appear higher up on the y-axis than the data for complaints made by black people.</li>
+                    <li>Once again, readers tendancy to read charts by correlating points from x to y would deceive them to utilize the y-axis in an incorrect manner, and draw incorrect conclusions</li>
+                    <li>Also, by including the data points themselves in addition to the whisker plot, we see how they do or do not align with the plot itself. Essentially, using a whisker plot lays everything about the data on the table.</li>
+                    <li><strong>Score: -1.5</strong></li>
+                </ul>
+            <li><strong>Using continuous data as opposed to discrete data</strong></li>
+                <ul>
+                    <li>Even if readers understand stacked area charts well and know to interpret the data by looking for the differences between y-points, it would be difficult to pinpoint exactly the y-values area because the data is continuous. </li>
+                    <li>This signals that data exists in places when it doesn’t (in between years). </li>
+                    <li><strong>Score: -1</strong></li>
+                </ul>
+            <li><strong>Grouping unknown, null, “refused”, with other race</strong></li>
+                <ul>
+                    <li>Grouping these categories together is deceptive as first, readers are unaware that these other categories even exist and thus it hides data from the reader.</li>
+                    <li>Second, it is an inaccurate grouping, as categories like “refused” and “unknown” are not the same as being in another” albeit small ethnic category.</li>
+                    <li>Thus it also includes data that should have been excluded, leading to over counting in the data.  </li>
+                    <li>I chose to group the data because I wanted to see what other ways a visualization could be deceptive, like manipulating data itself, as opposed to adding layers of deceptive visual encodings.</li>
+                    <li><strong>Score: -1</strong></li>
+                </ul>
+            <li><strong>Removing caption from visualization</strong></li>
+                <ul>
+                    <li>Whereas adding a caption like in my first visualization would add transparency to the data cleaning process. Excluding any caption gives readers a false sense of trust in the visualization</li>
+                    <li>They are not made aware of it's potential flaws and cannot sanity check design decisions within the visualization</li>
+                    <li><strong>Score: -0.5</strong></li>
+                </ul>
+        </ol>
+        <h2>Final Reflection</h2>
+        <p>This was quite a difficult process to undertake, largely because I don't normally try to actively deceive people. Being transparent and honest with data is something drilled into computer science and data science majors from the very beginning, but I think it's very fruitful to try and assume the mindset of someone who would because it reveals alot about how deception can occur intentionally and non-intentionally </p>
+        <p>It is still difficult to define ethical analysis and visualization because some deception can occur by mistake, by simply not knowing better. So, then perhaps, ethical visualization is all about being deeply intentional with our design decisions. Being meticulously aware of what the potential ramifications of using certain visual encodings are and giving the reader as much transparency and knowledge of the design process as possible when interpreting the visualization  </p>
+        <p>It was most interesting to see how some visual encodings aren't deceptive on their own, but can become deceptive by combining them with other design decisions (i.e stacked area chart combined with sorting ethnicity groups). This makes the drawing the bounds of what is persuasive versus deceptive difficult. I suppose it is matter of experience. The more visualizations one makes and the more eyes they get on it, the easier it'd get to gut check whether a choice is deceptive or persuasive.</p>
+    </section>
+</body>
